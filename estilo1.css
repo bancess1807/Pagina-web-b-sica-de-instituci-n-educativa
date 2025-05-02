@@ -1,0 +1,246 @@
+/* Estilos generales */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #80befc;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.button2{
+    display: inline-block;
+    background-color: #e7dd4c;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.button:hover {
+    background-color: #0056b3;
+}
+
+.button-secondary {
+    display: inline-block;
+    background-color: #0026ff;
+    color: #fff;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+.button-secondary:hover {
+    background-color: #545b62;
+}
+
+/* ... otros estilos de tu página ... */
+
+#btnSubir {
+    display: none; /* Ocultar inicialmente el botón */
+    position: fixed; /* Fijar el botón en la ventana */
+    bottom: 20px;
+    right: 20px;
+    z-index: 99; /* Asegurar que esté por encima de otros elementos */
+    border: none;
+    outline: none;
+    background-color: #007bff; /* Color de fondo */
+    color: white; /* Color del texto/icono */
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#btnSubir:hover {
+    opacity: 1;
+}
+
+#btnSubir svg {
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
+/* Activities Section */
+.activities {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.activity-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.activity-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.activity-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.activity-card h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.activity-card p {
+    color: #666;
+}
+
+/* Resources Section */
+.resources {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+}
+
+.resources h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.resource-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.resource-list li {
+    margin-bottom: 10px;
+}
+
+.resource-list a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.resource-list a:hover {
+    text-decoration: underline;
+}
+
+/* Community Section */
+.community {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #e9ecef;
+}
+
+.community h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.community p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+}
