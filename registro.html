@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+    <link rel="stylesheet" href="css/registro.css">
+</head>
+<body>
+    <div class="registro-container">
+        <h1>Registro de Nuevo Usuario</h1>
+        <form id="registro-form">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" required>
+            </div>
+            <div class="form-group">
+                <label>Nivel Educativo:</label>
+                <div class="radio-group">
+                    <input type="radio" id="primaria" name="nivel" value="primaria" required>
+                    <label for="primaria">Primaria</label>
+                    <input type="radio" id="secundaria" name="nivel" value="secundaria" required>
+                    <label for="secundaria">Secundaria</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Género:</label>
+                <div class="radio-group">
+                    <input type="radio" id="hombre" name="genero" value="hombre" required>
+                    <label for="hombre">Hombre</label>
+                    <input type="radio" id="mujer" name="genero" value="mujer" required>
+                    <label for="mujer">Mujer</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="grado">Grado:</label>
+                <select id="grado" name="grado" required>
+                    <option value="">Seleccionar Grado</option>
+                    <option value="1">1er Grado</option>
+                    <option value="2">2do Grado</option>
+                    <option value="3">3er Grado</option>
+                    <option value="4">4to Grado</option>
+                    <option value="5">5to Grado</option>
+                    <option value="6">6to Grado</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="correo">Correo Electrónico:</label>
+                <div class="correo-angel">
+                    <input type="text" id="correo_base" name="correo_base" required>@angel.com
+                    <input type="hidden" id="correo" name="correo" value="">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="contrasena">Contraseña (mín. 8 caracteres, números, letras y símbolos):</label>
+                <input type="password" id="contrasena" name="contrasena" required>
+                <small id="contrasena-error" class="error-message"></small>
+            </div>
+            <div class="form-group">
+                <label for="confirmar_contrasena">Confirmar Contraseña:</label>
+                <input type="password" id="confirmar_contrasena" name="confirmar_contrasena" required>
+                <small id="confirmar-error" class="error-message"></small>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="terminos" name="terminos" required>
+                <label for="terminos">Acepto los <a href="#">Términos y Condiciones</a></label>
+            </div>
+            <button type="submit" class="registro-button">Registrarse</button>
+            <div class="login-link">
+                ¿Ya tienes una cuenta? <a href="iniciar.html">Iniciar Sesión</a>
+            </div>
+        </form>
+    </div>
+    <script src="js/registro.js"></script>
+</body>
+</html>
